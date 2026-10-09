@@ -22,4 +22,4 @@ Expense(
     date Date,
     created_at DateTime default=Now()
     Foriegn Key(user_id) Refrences User(id)
-)auto increment =id
+)auto_increment =101
