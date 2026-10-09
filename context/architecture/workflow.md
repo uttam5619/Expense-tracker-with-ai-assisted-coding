@@ -35,12 +35,12 @@ Controllers related to one type of entity should be kept in a seperate file toge
 
 - services -> The services folder will have all the services functions. These services function will mainly contain the business logic that needs to be performed at the application server level. Services related to one entity should be kept in a seperate file togetherly.
 
-For example the user.services file should contain the services related to the user only. Similarly for expenses we will need a seperate file containing all the controllers related to the expences.
+For example the user.services file should contain the services related to the user only. Similarly for expenses we will need a seperate file containing all the services related to the expences.
 
 - repository -> repository contains the code/functions which directly intracts with models.
 Functions dealing with one type of model should be kept togetherly in one seperate file.
 
-Ex- user.repository will have all the functions primarily dealing with the user model. Similarly user.expenditure will have all the functions primarily dealing with the expense model. 
+Ex- user.repository will have all the functions primarily dealing with the user model. Similarly user.expense will have all the functions primarily dealing with the expense model. 
 
 
 
@@ -63,7 +63,7 @@ If the client is the web or mobile browser
 Client  -> Frontend Server -> Backend Server -> Database -> Expense Table
 
 If the client is tool like postman or thunderclient
-Client -> Backend Server -> Database -> User Table
+Client -> Backend Server -> Database -> Expense Table
 
 
-### At the backend we will have identical routes for all the service. No matter the client is a web browser or a mobile browser or it is a tool like postman or thunderclient. The route t the controllers/services will be identical.
+### At the backend we will have identical routes, controllers, services, repositories etc for all the service. No matter wheather the client is a web browser or a mobile browser or it is a tool like postman or thunderclient. The routes, controllers, services will remain  identical.

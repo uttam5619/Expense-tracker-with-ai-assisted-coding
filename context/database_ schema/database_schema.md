@@ -4,7 +4,7 @@
 - User
 - Expense
 
-### User Table
+### User Schema
 User(
     id int auto_increment Primary Key,
     name varchar,
@@ -12,13 +12,14 @@ User(
     created_at DateTime Default=Now()
 )auto_increment=1001
 
+### Expense Schema
 Expense(
     id integer auto_increment Primary Key,
-    user_id interger,
+    user_id integer,
     amount double,
     category varchar,
     description varchar,
     date Date,
     created_at DateTime default=Now()
     Foriegn Key(user_id) Refrences User(id)
-)
+)auto increment =id
